@@ -6,13 +6,34 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+    <SignAssembly>False</SignAssembly>
+    <Authors>Dowol</Authors>
+    <PackageProjectUrl>https://github.com/dowol/ironconvert</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/dowol/ironconvert</RepositoryUrl>
+    <PackageTags>file convert; file; convert;</PackageTags>
+    <NeutralLanguage>en-001</NeutralLanguage>
+    <PackageLicenseExpression>GPL-2.0-only</PackageLicenseExpression>
+    <AssemblyVersion></AssemblyVersion>
+    <Version>0.1.0</Version>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="FluentIcons.Wpf" Version="2.0.321" />
     <PackageReference Include="Magick.NET-Q8-AnyCPU" Version="14.11.0" />
     <PackageReference Include="Pandoc" Version="3.3.1" />
     <PackageReference Include="xFFmpeg.NET" Version="7.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
 
 </Project>
